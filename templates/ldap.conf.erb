@@ -1,0 +1,11 @@
+## MANAGED BY PUPPET ##
+<% @config.sort.each do |k,value| -%>
+<%= k %> <%= value %>
+<% end -%>
+
+<% @nss_map_attributes.sort.each do |k,value| -%>
+nss_map_attribute <%= k %> <%= value %>
+<% end -%>
+<% @nss_map_objectclass.sort.each do |k,value| -%>
+nss_map_objectclass <%= k %> <%= value %>
+<% end -%>
